@@ -126,7 +126,6 @@ class SqlSessionManager {
                 continue;
             }
             // 3.创建自定义SqlSession
-            // CustomSqlSession customSqlSession = new CustomSqlSession(sqlSessionFactory);
             SqlSessionTemplate sqlSessionTemplate = new SqlSessionTemplate(sqlSessionFactory);
             customSqlSessionMap.put(dataSourceInfo.getDbName(), sqlSessionTemplate);
         }
